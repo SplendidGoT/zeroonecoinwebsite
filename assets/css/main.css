@@ -1,0 +1,201 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  height: 400px;
+  max-height: 720px;
+  background: rgb(30,29,71);
+  background: radial-gradient(circle, rgba(30,29,71,1) 0%, rgba(13,14,40,1) 50%);
+}
+
+header nav.left {
+  float: left;
+  padding: 36px 0 0 50px;
+}
+
+header nav.left a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  color: #11cbe6;
+  fill: #11cbe6;
+  border-radius: 100%;
+  border: 1px solid #11cbe6;
+  float: left;
+  margin-right: 10px;
+}
+
+header nav.left a:hover {
+  color: #ffffff;
+  fill: #ffffff;
+  border-radius: 100%;
+  border: 1px solid #ffffff;
+}
+
+  header nav.left a.bitcointalk {
+    width: 36px;
+    height: 36px;
+    padding: 4px 0 0 4px;
+  }
+
+header nav.right {
+  padding: 50px 50px 0 0;
+  float: right;
+}
+
+header nav.right a {
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 50px;
+}
+
+header nav.right a:first-child {
+  margin-left: 0;
+}
+
+  header nav.right a:hover {
+    background: linear-gradient(to right, #16b5fa, #0aebc9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+header #logo-p-1 {
+  width: calc((100% - 900px) / 2);
+  height: 148px;
+  position: absolute;
+  z-index: 1;
+  top: 140px;
+  background: url('/assets/images/01_repeat.png') top left;
+}
+
+header #logo {
+  width: 1000px;
+  height: 148px;
+  position: absolute;
+  z-index: 2;
+  top: 140px;
+  margin-left: calc((100% - 1000px) / 2);
+  background: url('/assets/images/logo.png') top center no-repeat;
+  background-size: contain;
+}
+
+main {
+  width: 800px;
+  margin: 100px auto;
+  color: #0c0e41;
+  line-height: 24px;
+}
+
+main h2 {
+  font-size: 20px;
+}
+
+main h2, main p, main ul {
+  margin-bottom: 50px;
+}
+
+main h1 {
+  font-size: 20px;
+  font-style: italic;
+}
+
+main ul {
+  font-style: italic;
+  list-style: none;
+  display: table;
+}
+
+  main ul li {
+    margin-bottom: 20px;
+  }
+
+  main ul li:last-child {
+    margin-bottom: 0;
+  }
+
+  main ul li i, main ul li span {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  main ul li i:before {
+    content: "";
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    border-radius: 100%;
+    margin: 0 20px 0 -10px;
+    background: linear-gradient(to right, #16b5fa, #0aebc9);
+}
+
+footer {
+  width: 800px;
+  height: 80px;
+  margin: 0 auto;
+  padding-top: 40px;
+  font-size: 12px;
+  color: #8f91bf;
+  border-top: 1px solid #f4f4f8;
+}
+
+  footer .left {
+    float: left;
+  }
+
+  footer .right {
+    float: right;
+  }
+
+  footer .right a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    float: right;
+    fill: #8f91bf;
+  }
+
+  footer .right a.bitcointalk {
+    width: 26px;
+    height: 26px;
+    padding: 4px 0 0 4px;
+  }
+
+  footer .right a:hover {
+    fill: #0c0e41;
+  }
+
+@media only screen and (max-width: 1100px) {
+  header #logo-p-1 {
+    width: calc((100% - 660px) / 2);
+    height: 116px;
+    top: 156px;
+  }
+  header #logo {
+    width: 800px;
+    height: 116px;
+    top: 156px;
+    margin-left: calc((100% - 780px) / 2);
+  }
+  main, footer {
+    width: 640px;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  header {
+    height: 340px;
+  }
+  header #logo-p-1 {
+    width: calc((100% - 460px) / 2);
+    height: 86px;
+    top: 156px;
+  }
+  header #logo {
+    width: 600px;
+    height: 86px;
+    top: 156px;
+    margin-left: calc((100% - 580px) / 2);
+  }
+}
