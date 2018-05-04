@@ -18,26 +18,14 @@ header nav.left a {
   display: block;
   width: 40px;
   height: 40px;
-  color: #11cbe6;
-  fill: #11cbe6;
-  border-radius: 100%;
-  border: 1px solid #11cbe6;
   float: left;
   margin-right: 10px;
 }
 
-header nav.left a:hover {
-  color: #ffffff;
-  fill: #ffffff;
-  border-radius: 100%;
-  border: 1px solid #ffffff;
+header nav.left a:hover *{
+  color: #ffffff !important;
+  fill: #ffffff !important;
 }
-
-  header nav.left a.bitcointalk {
-    width: 36px;
-    height: 36px;
-    padding: 4px 0 0 4px;
-  }
 
 header nav.right {
   padding: 50px 50px 0 0;
@@ -153,16 +141,16 @@ footer {
     width: 30px;
     height: 30px;
     float: right;
+    margin-left: 10px;
+  }
+
+  footer .right a svg * {
+    color: #8f91bf;
     fill: #8f91bf;
   }
 
-  footer .right a.bitcointalk {
-    width: 26px;
-    height: 26px;
-    padding: 4px 0 0 4px;
-  }
-
-  footer .right a:hover {
+  footer .right a:hover svg * {
+    color: #0c0e41;
     fill: #0c0e41;
   }
 
