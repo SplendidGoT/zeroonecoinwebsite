@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>01coin</title>
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700,700i">
+  <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700,700i">-->
   <link rel="stylesheet" href="/assets/css/normalize.css">
   <link rel="stylesheet" href="/assets/css/main.css">
 
@@ -12,7 +12,7 @@
 
 </head>
 
-<body>
+<body id="state">
 
   <header>
     <nav class="left">
@@ -116,6 +116,8 @@
       <a href="https://github.com/zocteam/zeroonecoin/releases/tag/V0.12.1.6" target="_blank">Wallets</a>
     </nav>
 
+    <div id="open-mobile-menu" onclick="openMenu()">=</div>
+
     <div id="logo-p-1"></div>
 
     <div id="logo"></div>
@@ -183,6 +185,13 @@
       </a>
     </div>
   </footer>
+
+<script>
+  function openMenu() {
+    var element = document.getElementById("state");
+    element.classList.toggle("active");
+  }
+</script>
 
 </body>
 </html>
