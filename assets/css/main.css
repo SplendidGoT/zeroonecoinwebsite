@@ -234,6 +234,15 @@ footer {
     min-height:100vh;
   }
 
+  header:after {
+    position: absolute;
+    bottom: 20px;
+    font-size: 24px;
+    color: #ffffff;
+    transform: rotate(90deg);
+    content: "\276F";
+  }
+
   header nav.left {
     padding: 20px 0 0 20px;
   }
@@ -261,6 +270,12 @@ footer {
     color: #0c0d26;
   }
 
+  body.active header nav.right a:after {
+    float: right;
+    color: #8f91bf;
+    content: "\276F";
+  }
+
   body.active header nav.left * {
     color: #8f91bf !important;
     fill: #8f91bf !important;
@@ -269,9 +284,20 @@ footer {
   }
 
   body.active header #open-mobile-menu {
+    height: 40px;
+    padding-top: 0;
+    line-height: 40px;
     color: #8f91bf;
     border-color: #8f91bf;
     z-index: 4;
+  }
+
+  body.active header #open-mobile-menu:after {
+    content: 'x';
+  }
+
+  body.active header #open-mobile-menu span {
+    display: none;
   }
 
   header #open-mobile-menu {
