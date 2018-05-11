@@ -94,7 +94,7 @@ header #logo {
 
 main {
   width: 800px;
-  margin: 100px auto;
+  margin: 100px auto 40px auto;
   color: #0c0e41;
   line-height: 24px;
 }
@@ -139,7 +139,11 @@ main ul {
     border-radius: 100%;
     margin: 0 20px 0 -10px;
     background: linear-gradient(to right, #16b5fa, #0aebc9);
-}
+  }
+
+  main #banners {
+    margin-top: 40px;
+  }
 
 footer {
   width: 800px;
@@ -240,6 +244,7 @@ footer {
     font-size: 24px;
     color: #ffffff;
     transform: rotate(90deg);
+    font-weight: 300;
     content: "\276F";
   }
 
