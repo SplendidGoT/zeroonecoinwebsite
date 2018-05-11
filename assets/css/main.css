@@ -142,6 +142,8 @@ main ul {
   }
 
   main #banners {
+    border-top: 1px solid #f4f4f8;
+    padding-top: 40px;
     margin-top: 40px;
   }
 
